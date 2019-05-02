@@ -7,22 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		038AE8B5157A10AE882E564B /* libPods-RNUserDefaultsIOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F02F74958A49880AC1BFF32E /* libPods-RNUserDefaultsIOSTests.a */; };
-		559FCEFB1B06A72F003129B0 /* libRNUserDefaultsIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 559FCEEF1B06A72F003129B0 /* libRNUserDefaultsIOS.a */; };
-		559FCF0A1B06A9D4003129B0 /* UserDefaultsManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FCF091B06A9D4003129B0 /* UserDefaultsManagerSpec.m */; };
 		559FCF0F1B06AA3C003129B0 /* RNUserDefaultsIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FCF0D1B06AA3C003129B0 /* RNUserDefaultsIOS.m */; };
 		559FCF101B06AA3C003129B0 /* UserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 559FCF0E1B06AA3C003129B0 /* UserDefaultsManager.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		559FCEFC1B06A72F003129B0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 559FCEE71B06A72F003129B0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 559FCEEE1B06A72F003129B0;
-			remoteInfo = RNUserDefaultsIOS;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		559FCEED1B06A72F003129B0 /* CopyFiles */ = {
@@ -38,7 +25,6 @@
 
 /* Begin PBXFileReference section */
 		559FCEEF1B06A72F003129B0 /* libRNUserDefaultsIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNUserDefaultsIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		559FCEFA1B06A72F003129B0 /* RNUserDefaultsIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNUserDefaultsIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		559FCF001B06A72F003129B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		559FCF091B06A9D4003129B0 /* UserDefaultsManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsManagerSpec.m; sourceTree = "<group>"; };
 		559FCF0B1B06AA3C003129B0 /* RNUserDefaultsIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNUserDefaultsIOS.h; sourceTree = "<group>"; };
@@ -55,15 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		559FCEF71B06A72F003129B0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				559FCEFB1B06A72F003129B0 /* libRNUserDefaultsIOS.a in Frameworks */,
-				038AE8B5157A10AE882E564B /* libPods-RNUserDefaultsIOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				559FCEEF1B06A72F003129B0 /* libRNUserDefaultsIOS.a */,
-				559FCEFA1B06A72F003129B0 /* RNUserDefaultsIOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,26 +131,6 @@
 			productReference = 559FCEEF1B06A72F003129B0 /* libRNUserDefaultsIOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		559FCEF91B06A72F003129B0 /* RNUserDefaultsIOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 559FCF061B06A72F003129B0 /* Build configuration list for PBXNativeTarget "RNUserDefaultsIOSTests" */;
-			buildPhases = (
-				2BA2CBA3E34B07FFD2FC9F5F /* Check Pods Manifest.lock */,
-				559FCEF61B06A72F003129B0 /* Sources */,
-				559FCEF71B06A72F003129B0 /* Frameworks */,
-				559FCEF81B06A72F003129B0 /* Resources */,
-				DFC6A04873ACFB11FD013134 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				559FCEFD1B06A72F003129B0 /* PBXTargetDependency */,
-			);
-			name = RNUserDefaultsIOSTests;
-			productName = RNUserDefaultsIOSTests;
-			productReference = 559FCEFA1B06A72F003129B0 /* RNUserDefaultsIOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,9 +143,6 @@
 					559FCEEE1B06A72F003129B0 = {
 						CreatedOnToolsVersion = 6.2;
 					};
-					559FCEF91B06A72F003129B0 = {
-						CreatedOnToolsVersion = 6.2;
-					};
 				};
 			};
 			buildConfigurationList = 559FCEEA1B06A72F003129B0 /* Build configuration list for PBXProject "RNUserDefaultsIOS" */;
@@ -197,6 +150,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 559FCEE61B06A72F003129B0;
@@ -205,53 +159,9 @@
 			projectRoot = "";
 			targets = (
 				559FCEEE1B06A72F003129B0 /* RNUserDefaultsIOS */,
-				559FCEF91B06A72F003129B0 /* RNUserDefaultsIOSTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		559FCEF81B06A72F003129B0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2BA2CBA3E34B07FFD2FC9F5F /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DFC6A04873ACFB11FD013134 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNUserDefaultsIOSTests/Pods-RNUserDefaultsIOSTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		559FCEEB1B06A72F003129B0 /* Sources */ = {
@@ -263,23 +173,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		559FCEF61B06A72F003129B0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				559FCF0A1B06A9D4003129B0 /* UserDefaultsManagerSpec.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		559FCEFD1B06A72F003129B0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 559FCEEE1B06A72F003129B0 /* RNUserDefaultsIOS */;
-			targetProxy = 559FCEFC1B06A72F003129B0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		559FCF011B06A72F003129B0 /* Debug */ = {
@@ -365,6 +259,7 @@
 					"$(SRCROOT)/../../React/**",
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../../ios/Pods/Headers/Public/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -381,42 +276,11 @@
 					"$(SRCROOT)/../../React/**",
 					"$(SRCROOT)/../react-native/React/**",
 					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../../ios/Pods/Headers/Public/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		559FCF071B06A72F003129B0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 809831CEBAB242911E70061A /* Pods-RNUserDefaultsIOSTests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RNUserDefaultsIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		559FCF081B06A72F003129B0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A87FCE5AE5E0842B36D1575 /* Pods-RNUserDefaultsIOSTests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = RNUserDefaultsIOSTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -437,15 +301,6 @@
 			buildConfigurations = (
 				559FCF041B06A72F003129B0 /* Debug */,
 				559FCF051B06A72F003129B0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		559FCF061B06A72F003129B0 /* Build configuration list for PBXNativeTarget "RNUserDefaultsIOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				559FCF071B06A72F003129B0 /* Debug */,
-				559FCF081B06A72F003129B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
